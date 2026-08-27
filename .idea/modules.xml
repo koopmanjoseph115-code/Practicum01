@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../NIO_Path_File Complete/NIO_Path_File Complete.iml" filepath="$PROJECT_DIR$/../NIO_Path_File Complete/NIO_Path_File Complete.iml" />
       <module fileurl="file://$PROJECT_DIR$/Practicum01.iml" filepath="$PROJECT_DIR$/Practicum01.iml" />
     </modules>
   </component>
