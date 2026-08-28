@@ -111,7 +111,7 @@ public class SafeInput
      * @param high - high value inclusive
      * @return  - double value within the specified inclusive range
      */
-    public static double getRangedDouble(Scanner pipe, String prompt, int low, int high)
+    public static double getRangedDouble(Scanner pipe, String prompt, double low, double high)
     {
        double retVal = 0;
        String trash = "";
