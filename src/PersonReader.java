@@ -80,6 +80,8 @@ public class PersonReader
                 // the last field year of birth yob is an int the rest are strings.
 
                 String[] fields;
+                System.out.printf("%-8s %-25s %-25s %-10s %6s\n", "ID", "Firstname", "Lastname", "Title", "YOB");
+                System.out.printf("\n================================================================================\n");
                 for(String l:lines)
                 {
                     fields = l.split(","); // Split the record into the fields

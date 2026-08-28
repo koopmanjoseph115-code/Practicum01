@@ -20,7 +20,7 @@ public class ProductReader
         String headerFormat = "%-13s%-17s%-15s%-9s%s";
         String recordFormat = "%-13s%-17s%-15s%-9s%s";
 
-        final int FIELDS_LENGTH = 5;
+        final int FIELDS_LENGTH = 4;
 
         String id, name, description;
         double cost;
@@ -65,8 +65,11 @@ public class ProductReader
                 // the last field year of birth yob is an int the rest are strings.
 
                 String[] fields;
+                System.out.printf("\n%-8s %-25s %-25s %-10s\n", "ID", "Name", "Description", "Cost");
+                System.out.printf("\n===================================================================\n");
                 for(String l:lines)
                 {
+                    if(l.trim().isEmpty()) continue;
                     fields = l.split(","); // Split the record into the fields
 
                     if(fields.length == FIELDS_LENGTH)
@@ -75,7 +78,7 @@ public class ProductReader
                         name = fields[1].trim();
                         description  = fields[2].trim();
                         cost = Double.parseDouble(fields[3].trim());
-                        System.out.printf("\n%-8s%-25s%-25s%-6s%6d", id, name, description, cost);
+                        System.out.printf("%-8s %-25s %-25s %,.2f\n", id, name, description, cost);
                     }
                     else
                     {
